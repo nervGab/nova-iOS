@@ -96,10 +96,102 @@ var catString = String(categoryCharacters)
 print(catString)
 
 let unusualAnimals = "koala _ ?, Rinoceronte ?, Finguino ?, domedariusAlexusGregours ?"
-print( "Unusual Animals \(unusualAnimals.count) caracteres")
+print( "Unusual Animals \(unusualAnimals.count) characters")
 
 var welcomeToSwift = "Grettings"
 welcomeToSwift.insert("!", at: welcomeToSwift.endIndex)
 welcomeToSwift.insert(contentsOf: "to all", at: welcomeToSwift.endIndex)
 
 print(welcomeToSwift)
+
+// MARK: - Arrays (matrices, Colecciones)
+
+var iPhones = ["iPhone 4", "iPhone 5", "iPhone XR", "iPhone X"]
+var iPads = ["iPad Air", "iPad Pro", "iPad Mini retina"]
+
+var dispositivos = iPhones + iPads
+
+dispositivos.append("Mac Book Pro")
+dispositivos.insert("iWatch 24mm", at: 0)
+dispositivos.remove(at: 5)
+dispositivos.sort(by: >)
+
+print(dispositivos)
+
+let iPhone5 = dispositivos[2]
+
+let lastPosition = dispositivos.last
+let firstPosition = dispositivos.first
+
+let aux = dispositivos.filter { $0.contains("iP") }
+
+print(aux)
+
+
+// MARK: - Diccionarios  (matrices, Colecciones)
+
+var emptyDictionary: [String: String] = [:]
+var otherDictionary = Dictionary<String,Any>()
+
+var car:[String: String] = ["brand": "Mazda",
+                            "model": "Megane",
+                            "power": "145 hp"]
+
+let brand: String? = car["brand"]
+
+if car["model"] != nil {
+    print(car["model"]!)
+}
+
+if let model = car["model"] {
+    print(model)
+//    print(brand as Any)
+    print(brand ?? "")
+} else {
+    
+}
+
+for (clave, valor) in car {
+    print("key: \(clave) y value: \(valor)")
+}
+
+for clave in car.keys {
+    print(clave)
+}
+
+for value in car.values {
+    print(value)
+}
+
+// MARK: - Opcionales (Optional binding)
+
+var numberInt = 34
+var numberString = "3"
+
+var addNumberIntString = numberInt + Int(numberString)!
+
+var newAdd: String = String(addNumberIntString)
+
+var newAddStr: String = numberString + String(numberInt)
+
+var nameAA: String? = "Nerv"
+nameAA = "JuanMa"
+
+var nameBB: String? = nil
+var nameModA: String!
+
+if let nameModAWgr = nameModA {
+    print("my name is: \(nameModAWgr)")
+}
+
+var xOptional: Int?
+xOptional = 2
+var newOptionalValue: String?
+newOptionalValue = String(xOptional ?? 0)
+
+var yAddition: Int = 20
+var additionResultXY = newOptionalValue! + String(yAddition)
+
+if let additionResult = newOptionalValue {
+    print(additionResult)
+}
