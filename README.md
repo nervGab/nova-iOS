@@ -8,3 +8,4 @@ Parte 1:
 
 Parte 2: 
   - mi primera app
+  - introducción a xCode IDE de trabajo
