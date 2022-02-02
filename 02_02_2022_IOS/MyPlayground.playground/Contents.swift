@@ -195,3 +195,67 @@ var additionResultXY = newOptionalValue! + String(yAddition)
 if let additionResult = newOptionalValue {
     print(additionResult)
 }
+
+// MARK: - Funciones
+
+func myFavoriteSeries() {
+    print("Neon Genesis Evangelion")
+}
+
+myFavoriteSeries()
+
+func functionReturnString() -> String {
+    "hello world"
+}
+
+let varReturnString = functionReturnString()
+
+print(varReturnString)
+
+func myFunctionWithAttributes(message: String) {
+    print(message)
+}
+
+func sequenceNumbers(a: Int,
+                b: Int,
+                c: Int) -> Int{
+return ( a * b ) + c
+}
+
+let sequenceNumbers2 = sequenceNumbers(a: 2, b: 4, c: 1)
+print(sequenceNumbers2)
+
+func hello(personName: String) -> String {
+    let greetings = "hello" + " " + personName + "!"
+    return greetings
+}
+
+var greet = hello(personName: "NervGab")
+print(greet)
+
+func helloAgain(personName: String) -> String {
+    let greetings = "hello" + " " + personName + "!"
+    return greetings
+}
+
+func helloFriends(personName: String, greetingsDone: Bool) -> String {
+    if greetingsDone {
+        return hello(personName: "JuanMa")
+    } else {
+        return helloAgain(personName: "Pereira")
+        
+    }
+}
+
+print(helloFriends(personName: "JuanMa", greetingsDone: true))
+
+func mutationParameters(a: Int, b: Int, multiply c: Int) -> Int {
+    return ( a * b ) + c
+}
+var PI = 3
+func functionInOut(number: inout Int) {
+    number = 3
+}
+
+functionInOut(number: &PI)
+print(PI)
