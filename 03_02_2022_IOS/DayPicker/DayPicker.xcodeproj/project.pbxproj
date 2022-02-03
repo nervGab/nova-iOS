@@ -56,15 +56,31 @@
 		954ACDA627AC3EF80092D088 /* DayPicker */ = {
 			isa = PBXGroup;
 			children = (
-				954ACDA727AC3EF80092D088 /* AppDelegate.swift */,
-				954ACDA927AC3EF80092D088 /* SceneDelegate.swift */,
-				954ACDAB27AC3EF80092D088 /* ViewController.swift */,
+				954ACDBB27AC7A670092D088 /* CoreApp */,
+				954ACDBC27AC7A8F0092D088 /* Modules */,
 				954ACDAD27AC3EF80092D088 /* Main.storyboard */,
 				954ACDB027AC3EFB0092D088 /* Assets.xcassets */,
 				954ACDB227AC3EFB0092D088 /* LaunchScreen.storyboard */,
 				954ACDB527AC3EFB0092D088 /* Info.plist */,
 			);
 			path = DayPicker;
+			sourceTree = "<group>";
+		};
+		954ACDBB27AC7A670092D088 /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				954ACDA727AC3EF80092D088 /* AppDelegate.swift */,
+				954ACDA927AC3EF80092D088 /* SceneDelegate.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		954ACDBC27AC7A8F0092D088 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				954ACDAB27AC3EF80092D088 /* ViewController.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
