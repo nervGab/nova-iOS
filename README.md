@@ -14,3 +14,8 @@ Parte 2:
 
 parte 3:
   - MyDayPickerApp
+
+
+
+
+tracking sheet (Ask for access): https://docs.google.com/spreadsheets/d/1eUYuaQPKfVGLa_pjcSa-LEiiuAXbY2ALMMXQ9dOrotU/edit?usp=sharing
