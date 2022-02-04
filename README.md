@@ -15,6 +15,7 @@ Parte 2:
 parte 3:
   - MyDayPickerApp:
     + textFieldAction onEnded con #selector 
+    + combinadores raiz: tab (Tab Bar) / nav (navigationCotroller) / table (table View)
 
 
 
