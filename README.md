@@ -13,7 +13,8 @@ Parte 2:
 03_02_2022 
 
 parte 3:
-  - MyDayPickerApp
+  - MyDayPickerApp:
+    + textFieldAction onEnded con #selector 
 
 
 
