@@ -72,9 +72,9 @@
 		954ACDBB27AC7A670092D088 /* CoreApp */ = {
 			isa = PBXGroup;
 			children = (
+				954ACDAD27AC3EF80092D088 /* Main.storyboard */,
 				954ACDA727AC3EF80092D088 /* AppDelegate.swift */,
 				954ACDA927AC3EF80092D088 /* SceneDelegate.swift */,
-				954ACDAD27AC3EF80092D088 /* Main.storyboard */,
 			);
 			path = CoreApp;
 			sourceTree = "<group>";
