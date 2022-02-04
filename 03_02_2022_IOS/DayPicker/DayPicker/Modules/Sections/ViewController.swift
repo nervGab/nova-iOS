@@ -13,10 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var myDateLBL: UILabel!
     @IBOutlet weak var myDateTextfield: UITextField!
     
-    @IBAction func showPickerTextfieldACTION(myTextField: UITextField) {
-        let pickerDateView = UIPickerView()
+    @IBAction func showPickerTextFieldACTION(myTextField: UITextField){
+        let pickerDateView = UIDatePicker()
         pickerDateView.datePickerMode = .dateAndTime
-        myDateTextfield.inputView = pickerDateView
+        myTextField.inputView = pickerDateView
         pickerDateView.addTarget(self, action: #selector(datePickerValueChanged(_:)), for: .valueChanged)
     }
     
@@ -24,12 +24,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    
     @objc
-    func datePickerValueChanged(_ myCustomDayPicker: UIPickerView){
+    func datePickerValueChanged(_ myCustomDatePicker: UIDatePicker){
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
-        self.myDateLBL.text = dateFormatter.string(from: myCustomDayPicker.date)
+        self.myDateLBL.text = dateFormatter.string(from: myCustomDatePicker.date)
     }
 
 }
