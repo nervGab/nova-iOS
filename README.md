@@ -9,3 +9,8 @@ Parte 1:
 Parte 2: 
   - mi primera app
   - introducción a xCode IDE de trabajo
+
+03_02_2022 
+
+parte 3:
+  - MyDayPickerApp
