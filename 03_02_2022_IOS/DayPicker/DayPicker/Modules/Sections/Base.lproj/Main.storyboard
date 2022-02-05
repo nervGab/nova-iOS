@@ -71,17 +71,58 @@
             </objects>
             <point key="canvasLocation" x="897.10144927536237" y="63.616071428571423"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="f03-rG-7xi">
             <objects>
-                <viewController id="FWX-Rz-JXv" sceneMemberID="viewController">
+                <viewController id="FWX-Rz-JXv" customClass="ThirdViewController" customModule="DayPicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7jd-SE-72R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Madrid locations" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="esR-qb-kO2">
+                                <rect key="frame" x="20" y="88" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="zip code of your area" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BgB-T7-cd6">
+                                <rect key="frame" x="20" y="154" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="work priority" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qPb-V8-QRK">
+                                <rect key="frame" x="20" y="218" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AYW-4I-Ksv">
+                                <rect key="frame" x="20" y="296" width="374" height="218"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lFR-4I-kLW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BgB-T7-cd6" firstAttribute="leading" secondItem="qPb-V8-QRK" secondAttribute="leading" id="0s3-im-gcC"/>
+                            <constraint firstItem="qPb-V8-QRK" firstAttribute="top" secondItem="BgB-T7-cd6" secondAttribute="bottom" constant="30" id="42r-WL-tsM"/>
+                            <constraint firstItem="esR-qb-kO2" firstAttribute="top" secondItem="lFR-4I-kLW" secondAttribute="top" id="4pL-cY-zK8"/>
+                            <constraint firstItem="esR-qb-kO2" firstAttribute="trailing" secondItem="BgB-T7-cd6" secondAttribute="trailing" id="7HV-YN-aD7"/>
+                            <constraint firstItem="qPb-V8-QRK" firstAttribute="leading" secondItem="AYW-4I-Ksv" secondAttribute="leading" id="9Wi-YG-qlj"/>
+                            <constraint firstItem="AYW-4I-Ksv" firstAttribute="top" secondItem="qPb-V8-QRK" secondAttribute="bottom" constant="44" id="A8B-kk-oI1"/>
+                            <constraint firstItem="lFR-4I-kLW" firstAttribute="bottom" secondItem="AYW-4I-Ksv" secondAttribute="bottom" constant="299" id="TQW-bv-ixN"/>
+                            <constraint firstItem="esR-qb-kO2" firstAttribute="leading" secondItem="BgB-T7-cd6" secondAttribute="leading" id="XFS-L9-fpQ"/>
+                            <constraint firstItem="BgB-T7-cd6" firstAttribute="top" secondItem="esR-qb-kO2" secondAttribute="bottom" constant="32" id="aiC-Ho-4el"/>
+                            <constraint firstItem="esR-qb-kO2" firstAttribute="leading" secondItem="7jd-SE-72R" secondAttribute="leadingMargin" id="dNF-Xa-kdH"/>
+                            <constraint firstItem="BgB-T7-cd6" firstAttribute="trailing" secondItem="qPb-V8-QRK" secondAttribute="trailing" id="fLw-Vb-tPe"/>
+                            <constraint firstItem="esR-qb-kO2" firstAttribute="trailing" secondItem="7jd-SE-72R" secondAttribute="trailingMargin" id="l2R-V6-weC"/>
+                            <constraint firstItem="qPb-V8-QRK" firstAttribute="trailing" secondItem="AYW-4I-Ksv" secondAttribute="trailing" id="odF-Jw-slJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dit-O9-eiZ"/>
+                    <connections>
+                        <outlet property="MadridLcation" destination="esR-qb-kO2" id="LSQ-ud-EgN"/>
+                        <outlet property="ProfilePictureImageView" destination="AYW-4I-Ksv" id="C1D-Dg-nDz"/>
+                        <outlet property="WorkPriority" destination="qPb-V8-QRK" id="7bd-uO-GTN"/>
+                        <outlet property="ZonePostalCode" destination="BgB-T7-cd6" id="Rx3-Ig-1bC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bQ-tV-Obb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
