@@ -16,12 +16,13 @@ parte 3:
   - MyDayPickerApp:
     + textFieldAction onEnded con #selector 
     + combinadores raiz: tab (Tab Bar) / nav (navigationCotroller) / table (table View)
+    + dateAndTime pickerView
     + UIPickerView en second VC + asignación e implementación de las extensiones picker.dataSource y picker.delegate.
     
       dataSource [numberOfComponents, numberOfRowsInComponent]
       delegate [titleForRow, rowHeightForComponent, didSelectRow]
       
-    +
+    + UIPickerView por storyBoard/xib y por código 
 
 
 tracking sheet (Ask for access): https://docs.google.com/spreadsheets/d/1eUYuaQPKfVGLa_pjcSa-LEiiuAXbY2ALMMXQ9dOrotU/edit?usp=sharing
