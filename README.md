@@ -17,7 +17,8 @@ parte 3:
     + textFieldAction onEnded con #selector 
     + combinadores raiz: tab (Tab Bar) / nav (navigationCotroller) / table (table View)
     + UIPickerView en second VC + asignación e implementación de las extensiones picker.dataSource y picker.delegate
-
+      dataSource [numberOfComponents, numberOfRowsInComponent]
+      delegate [titleForRow, rowHeightForComponent, didSelectRow]
 
 
 tracking sheet (Ask for access): https://docs.google.com/spreadsheets/d/1eUYuaQPKfVGLa_pjcSa-LEiiuAXbY2ALMMXQ9dOrotU/edit?usp=sharing
