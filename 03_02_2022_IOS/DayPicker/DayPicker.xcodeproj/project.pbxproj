@@ -62,6 +62,7 @@
 			children = (
 				958879F527ADD97D001CDB39 /* Modules */,
 				954ACDBB27AC7A670092D088 /* CoreApp */,
+				954ACDAD27AC3EF80092D088 /* Main.storyboard */,
 				954ACDB027AC3EFB0092D088 /* Assets.xcassets */,
 				954ACDB227AC3EFB0092D088 /* LaunchScreen.storyboard */,
 				954ACDB527AC3EFB0092D088 /* Info.plist */,
@@ -72,7 +73,6 @@
 		954ACDBB27AC7A670092D088 /* CoreApp */ = {
 			isa = PBXGroup;
 			children = (
-				954ACDAD27AC3EF80092D088 /* Main.storyboard */,
 				954ACDA727AC3EF80092D088 /* AppDelegate.swift */,
 				954ACDA927AC3EF80092D088 /* SceneDelegate.swift */,
 			);
