@@ -13,6 +13,10 @@ class SecondViewController: UIViewController {
     var pickerCheeseArrayData = ["mozzarella", "Gorgonzola", "Provolone", "Stilton", "Asiago"]
     
     // MARK: - IBOutlets
+    @IBOutlet weak var titleChesseLBL: UILabel!
+    @IBOutlet weak var detailChesseTexView: UITextView!
+    @IBOutlet weak var chesseImageView: UIImageView!
+    @IBOutlet weak var selectionChessePickerView: UIPickerView!
     
     
     override func viewDidLoad() {
