@@ -16,8 +16,7 @@ parte 3:
   - MyDayPickerApp:
     + textFieldAction onEnded con #selector 
     + combinadores raiz: tab (Tab Bar) / nav (navigationCotroller) / table (table View)
-    + UIPickerView en second VC + implementación de picker.dataSource y picker.delegate extensión
-
+    + UIPickerView en second VC + asignación e implementación de las extensiones picker.dataSource y picker.delegate
 
 
 
