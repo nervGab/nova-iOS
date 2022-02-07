@@ -24,5 +24,14 @@ parte 3:
       
     + UIPickerView por storyBoard/xib y por código 
 
+07_02_2022
+
+Parte 2:
+  - AlertsApp:
+    + UI AlertController: Simple, TextField, LoginForm, Multiple Buttons
+    + UI ActionSheet Standard
+    + Navigation: segue, code
+
+
 
 tracking sheet (Ask for access): https://docs.google.com/spreadsheets/d/1eUYuaQPKfVGLa_pjcSa-LEiiuAXbY2ALMMXQ9dOrotU/edit?usp=sharing
