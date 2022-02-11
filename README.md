@@ -30,7 +30,7 @@ Parte 2:
   - AlertsApp:
     + UI AlertController: Simple, TextField, LoginForm, Multiple Buttons
     + UI ActionSheet Standard
-    + Navigation: segue, code
+    + Navegación: segue, code
 
 
 
