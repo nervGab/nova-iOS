@@ -26,9 +26,9 @@ class SecondViewController: UIViewController {
         self.selectionCheesePickerView.delegate = self
         self.selectionCheesePickerView.dataSource = self
         
-        self.title = pickerCheeseArrayData[0]
-        self.titleCheeseLBL.text = pickerCheeseArrayData[0]
-        self.chesseImageView.image = UIImage(named: pickerCheeseArrayData[0])
+        self.title = pickerCheeseArrayData[1]
+        self.titleCheeseLBL.text = pickerCheeseArrayData[1]
+        self.chesseImageView.image = UIImage(named: pickerCheeseArrayData[1])
         self.detailCheeseTextView.text = "plastic or stretched-curd cheese; the curd is mixed with heated whey and stretched and kneaded until it attains a smooth, pliable consistency. ... It is then molded into spheres or ovals and stored in water to keep it moist."
     }
 

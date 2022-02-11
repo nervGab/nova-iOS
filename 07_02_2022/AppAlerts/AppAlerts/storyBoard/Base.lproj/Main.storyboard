@@ -26,8 +26,11 @@
                                 <state key="normal" title="UI AlertController Simple">
                                     <color key="titleColor" red="0.34780764942251702" green="0.25593636653824769" blue="0.57115881221810572" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="alertVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfO-6A-jY5"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyk-UB-df4">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyk-UB-df4">
                                 <rect key="frame" x="20" y="164" width="374" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99863129849999999" blue="0.41626781229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -37,8 +40,11 @@
                                 <state key="normal" title="UI AlertController TextField">
                                     <color key="titleColor" red="0.34780764939999997" green="0.25593636650000001" blue="0.57115881219999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="alertVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ada-Re-W5V"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e4-Xo-KGV">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e4-Xo-KGV">
                                 <rect key="frame" x="20" y="234" width="374" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99863129849999999" blue="0.41626781229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -48,8 +54,11 @@
                                 <state key="normal" title="UI AlertController LoginForm">
                                     <color key="titleColor" red="0.34780764939999997" green="0.25593636650000001" blue="0.57115881219999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="alertVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZd-Y5-NO4"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHT-kH-iEa">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHT-kH-iEa">
                                 <rect key="frame" x="20" y="308" width="374" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99863129849999999" blue="0.41626781229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -59,8 +68,11 @@
                                 <state key="normal" title="UI AlertController Multiple Buttons">
                                     <color key="titleColor" red="0.34780764939999997" green="0.25593636650000001" blue="0.57115881219999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="alertVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zHB-tZ-0dV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TId-K2-ehC">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TId-K2-ehC">
                                 <rect key="frame" x="20" y="384" width="374" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99863129849999999" blue="0.41626781229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -70,6 +82,9 @@
                                 <state key="normal" title="UI ActionSheet Standard">
                                     <color key="titleColor" red="0.34780764939999997" green="0.25593636650000001" blue="0.57115881219999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="alertVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iad-LR-ass"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BxD-77-quH">
                                 <rect key="frame" x="20" y="545" width="374" height="49"/>
@@ -81,6 +96,9 @@
                                 <state key="normal" title="segue Navigation">
                                     <color key="titleColor" red="0.34780764939999997" green="0.25593636650000001" blue="0.57115881219999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="j2r-B0-cm3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="5ca-sq-KOc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdr-RE-YZ9">
                                 <rect key="frame" x="20" y="626" width="374" height="49"/>
@@ -97,10 +115,28 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="uiAlertControllerSimple" destination="YaC-HF-lft" id="QsD-TB-5dI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-68.115942028985515" y="75.669642857142847"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="7UT-Aq-TcY">
+            <objects>
+                <viewController storyboardIdentifier="ThirdViewController" id="bX3-xY-g5U" customClass="ThirdViewController" customModule="AppAlerts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sg1-UH-P8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gbV-8m-kml"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vS-as-9ue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="477"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Ndf-K4-MqC">
@@ -109,13 +145,25 @@
                     <view key="view" contentMode="scaleToFill" id="i9o-o2-7oa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2J-F1-Btj">
+                                <rect key="frame" x="37" y="44" width="34" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                <connections>
+                                    <action selector="hideVC:" destination="j2r-B0-cm3" eventType="touchUpInside" id="iWN-gA-FXg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gd5-rJ-sm7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CE7-KZ-Hyb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yqO-nA-fae" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="76"/>
+            <point key="canvasLocation" x="897" y="-267"/>
         </scene>
     </scenes>
     <resources>
