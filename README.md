@@ -40,13 +40,13 @@ Parte 1:
   + Arquitectura de carpetas: 
   Modules [Sections[Detail, Master[Cell]]], CoreApp []
   + tableView implementación Básica:
-      1 crear array con datos en tVC (DataSource)
-      2 asignar delegado(TableViewDelegate) y fuente de datos(TableViewDataSource) a self
-      3 crear VC extension para el delegado (UITableViewDelegate) + implementar: tableView(didSelectRow)
-      4 crear VC extension para la fuente de datos (TableViewDataSource) + implementar: numberOfRowInSections, tableView(numberOfRowsInSection y cellForRowAt)
-      5 crear celda (.swift + .xib)
-      6 registrar la celda(nib + forCellReuseIdentifier) en tVC después de asignar delegado y fuente de datos
-      7 crear celda en método cellForRowAt
+      1 crear array con datos en tVC (DataSource).
+      2 asignar delegado(TableViewDelegate) y fuente de datos(TableViewDataSource) a self.
+      3 crear VC extension para el delegado (UITableViewDelegate) + implementar: tableView(didSelectRow).
+      4 crear VC extension para la fuente de datos (TableViewDataSource) + implementar: numberOfRowInSections, tableView(numberOfRowsInSection y cellForRowAt).
+      5 crear celda (.swift + .xib).
+      6 registrar la celda(nib + forCellReuseIdentifier) en tVC después de asignar delegado y fuente de datos.
+      7 crear celda en método cellForRowAt.
   + DTOpattern en DetailCoordinator
 
 
