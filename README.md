@@ -45,7 +45,7 @@ Parte 1:
       3 crear VC extension para el delegado (UITableViewDelegate) + implementar: tableView(didSelectRow)
       4 crear VC extension para la fuente de datos (TableViewDataSource) + implementar: numberOfRowInSections, tableView(numberOfRowsInSection y cellForRowAt)
       5 crear celda (.swift + .xib)
-      6 registrar la celda en tVC después de asignar delegado y fuente de datos
+      6 registrar la celda(nib + forCellReuseIdentifier) en tVC después de asignar delegado y fuente de datos
       7 crear celda en método cellForRowAt
   + DTOpattern en DetailCoordinator
 
