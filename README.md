@@ -42,6 +42,7 @@ Parte 1:
   Modules [Sections[Detail, Master[Cell]]], CoreApp []
   
   + tableView implementación Básica:
+  
       1 crear array con datos en tVC (DataSource).
       
       2 asignar delegado(TableViewDelegate) y fuente de datos(TableViewDataSource) a self.
