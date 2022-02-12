@@ -33,6 +33,7 @@ Parte 2:
     + Navegación: segue, code
 
 08_02_2022
+
 Parte 1:
 - AppIntroTableView:
 
