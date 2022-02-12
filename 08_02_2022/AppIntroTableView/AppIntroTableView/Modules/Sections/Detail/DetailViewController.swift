@@ -1,5 +1,5 @@
 //
-//  TableMonthViewController.swift
+//  DetailViewController.swift
 //  AppIntroTableView
 //
 //  Created by Juan Manuel Pereira Sanchez on 12/2/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableMonthViewController: UIViewController {
+class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

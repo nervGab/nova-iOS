@@ -17,7 +17,9 @@ final class AppCoordinator: AppCoordinatorProtocol {
     private var initialViewController = UIViewController()
     
     internal func showInitialVC(window: UIWindow) {
-        initialViewController = TableMonthViewController()
+        initialViewController = TableMonthCoordinator.navigation()
+//        initialViewController = TableMonthViewController()
+
         window.rootViewController = initialViewController
         window.makeKeyAndVisible()
     }
