@@ -26,7 +26,7 @@ parte 3:
 
 07_02_2022
 
-Parte 2:
+Parte 2: tipos de alertas
   - AlertsApp:
     + UI AlertController: Simple, TextField, LoginForm, Multiple Buttons
     + UI ActionSheet Standard
@@ -34,7 +34,7 @@ Parte 2:
 
 08_02_2022
 
-Parte 1:
+Parte 1: introducción a las tablas
 - AppIntroTableView:
   + AppCoordinator
   
