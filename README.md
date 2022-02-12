@@ -32,6 +32,8 @@ Parte 2:
     + UI ActionSheet Standard
     + Navegación: segue, code
 
-
+08_02_2022
+Parte 1:
+- AppIntroTableView:
 
 tracking sheet (Ask for access): https://docs.google.com/spreadsheets/d/1eUYuaQPKfVGLa_pjcSa-LEiiuAXbY2ALMMXQ9dOrotU/edit?usp=sharing
