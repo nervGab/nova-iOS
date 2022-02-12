@@ -13,7 +13,13 @@ final class DetailCoordinator {
         UINavigationController(rootViewController: view())
     }
     
-    static func view() -> DetailViewController {
-        DetailViewController()
+    static func view(dto: DetailCoordinatorDTO? = nil) -> DetailViewController {
+        let vc = DetailViewController()
+        vc.nameMonth = dto?.nameMonth ?? ""
+        return vc
     }
+}
+
+struct DetailCoordinatorDTO {
+    var nameMonth: String?
 }

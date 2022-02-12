@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9504724127B84074006B7711 /* MonthsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9504723F27B84074006B7711 /* MonthsTableViewCell.swift */; };
+		9504724227B84074006B7711 /* MonthsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9504724027B84074006B7711 /* MonthsTableViewCell.xib */; };
 		9544F05827B7DED500445BC9 /* TableMonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9544F05627B7DED500445BC9 /* TableMonthViewController.swift */; };
 		9544F05927B7DED500445BC9 /* TableMonthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9544F05727B7DED500445BC9 /* TableMonthViewController.xib */; };
 		958EDAE927B706480004465B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958EDAE827B706480004465B /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9504723F27B84074006B7711 /* MonthsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthsTableViewCell.swift; sourceTree = "<group>"; };
+		9504724027B84074006B7711 /* MonthsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthsTableViewCell.xib; sourceTree = "<group>"; };
 		9544F05627B7DED500445BC9 /* TableMonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMonthViewController.swift; sourceTree = "<group>"; };
 		9544F05727B7DED500445BC9 /* TableMonthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableMonthViewController.xib; sourceTree = "<group>"; };
 		958EDAE527B706470004465B /* AppIntroTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIntroTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9504723E27B83FC2006B7711 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9504723F27B84074006B7711 /* MonthsTableViewCell.swift */,
+				9504724027B84074006B7711 /* MonthsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		9544F05427B7DE3500445BC9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +115,7 @@
 		95EF80F027B7F7040055E91E /* Master */ = {
 			isa = PBXGroup;
 			children = (
+				9504723E27B83FC2006B7711 /* Cell */,
 				9544F05627B7DED500445BC9 /* TableMonthViewController.swift */,
 				9544F05727B7DED500445BC9 /* TableMonthViewController.xib */,
 				95EF80EE27B7F32C0055E91E /* TableMonthCoordinator.swift */,
@@ -177,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9504724227B84074006B7711 /* MonthsTableViewCell.xib in Resources */,
 				958EDAF527B7064A0004465B /* LaunchScreen.storyboard in Resources */,
 				9544F05927B7DED500445BC9 /* TableMonthViewController.xib in Resources */,
 				958EDAF227B7064A0004465B /* Assets.xcassets in Resources */,
@@ -197,6 +212,7 @@
 				95EF80F727B7F75D0055E91E /* DetailCoordinator.swift in Sources */,
 				958EDAE927B706480004465B /* AppDelegate.swift in Sources */,
 				9544F05827B7DED500445BC9 /* TableMonthViewController.swift in Sources */,
+				9504724127B84074006B7711 /* MonthsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
