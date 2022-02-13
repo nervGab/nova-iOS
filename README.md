@@ -59,5 +59,10 @@ Parte 1: introducción a las tablas
       
   + DTOpattern en DetailCoordinator
 
+Parte 3: App de navegación
+ - AppNavigation:
+  + prototipado de navegación sencillo(4 pantallas) con storyboards
+  + clase Helpers+Utils para metodos reutilizables 
+
 
 tracking sheet (Ask for access): https://docs.google.com/spreadsheets/d/1eUYuaQPKfVGLa_pjcSa-LEiiuAXbY2ALMMXQ9dOrotU/edit?usp=sharing
