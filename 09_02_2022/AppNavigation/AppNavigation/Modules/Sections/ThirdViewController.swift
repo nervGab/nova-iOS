@@ -22,11 +22,6 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var postalCodeTF: UITextField!
     @IBOutlet weak var cityTF: UITextField!
     
-    // MARK - Actions
-    @IBAction func nextScreen(_ sender: Any) {
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()

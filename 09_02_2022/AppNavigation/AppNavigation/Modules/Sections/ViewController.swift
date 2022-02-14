@@ -36,5 +36,9 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func closeVCs(segue: UIStoryboardSegue){
+        print("")
+    }
 }
 

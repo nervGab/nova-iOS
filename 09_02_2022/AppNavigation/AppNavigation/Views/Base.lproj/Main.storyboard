@@ -50,6 +50,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="2kg-8S-uVx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="897.10144927536237" y="49.553571428571423"/>
         </scene>
@@ -198,8 +199,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="goto window 4"/>
                                 <connections>
-                                    <action selector="nextScreen:" destination="6Tp-Q6-x4D" eventType="touchUpInside" id="X9W-3G-u6d"/>
-                                    <segue destination="AUX-j5-NFm" kind="show" identifier="segueV4" id="J4E-kx-lrY"/>
+                                    <segue destination="AUX-j5-NFm" kind="show" id="oSf-nf-YWU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="the age of my dog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSL-i2-flP">
@@ -229,10 +229,10 @@
             </objects>
             <point key="canvasLocation" x="2812" y="50"/>
         </scene>
-        <!--View Controller-->
+        <!--Fourth View Controller-->
         <scene sceneID="LNY-Js-K5k">
             <objects>
-                <viewController id="AUX-j5-NFm" sceneMemberID="viewController">
+                <viewController id="AUX-j5-NFm" customClass="FourthViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qp3-vW-RiD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,6 +272,9 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="enviar mail"/>
+                                <connections>
+                                    <action selector="sendEmailAction:" destination="AUX-j5-NFm" eventType="touchUpInside" id="zdf-be-meQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="the age of my dog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ha-i0-iUK">
                                 <rect key="frame" x="20" y="286" width="374" height="21"/>
@@ -308,6 +311,9 @@
                     <navigationItem key="navigationItem" id="7vd-ND-FbG">
                         <barButtonItem key="rightBarButtonItem" title="logout" id="7vV-Fm-6Ys">
                             <color key="tintColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="2kg-8S-uVx" kind="unwind" unwindAction="closeVCsWithSegue:" id="hd1-AY-kis"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
