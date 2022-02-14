@@ -79,10 +79,10 @@
                                 <rect key="frame" x="20" y="181" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pmQ-M5-O6p">
-                                <rect key="frame" x="20" y="232" width="374" height="34"/>
+                                <rect key="frame" x="20" y="231" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -91,16 +91,26 @@
                                 <rect key="frame" x="20" y="283" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <connections>
+                                    <action selector="DogAgeTFAction:" destination="OWe-GX-DBA" eventType="editingDidEnd" id="2RF-QN-TAJ"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shs-hl-ogd">
-                                <rect key="frame" x="20" y="348" width="374" height="47"/>
+                                <rect key="frame" x="20" y="414" width="374" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="calculate the age of your dog"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="the age of my dog is: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yi0-oW-aLC">
+                                <rect key="frame" x="20" y="347" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jlA-Fr-neg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -109,10 +119,18 @@
                         <barButtonItem key="rightBarButtonItem" title="goto window 3" id="bOF-Jw-2tA">
                             <color key="tintColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="6Tp-Q6-x4D" kind="show" id="CG5-vl-RR5"/>
+                                <segue destination="6Tp-Q6-x4D" kind="show" identifier="segueV3" id="CG5-vl-RR5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addressTF" destination="pmQ-M5-O6p" id="KzP-8k-sZk"/>
+                        <outlet property="dogAgeLBL" destination="Yi0-oW-aLC" id="5ig-AR-1ab"/>
+                        <outlet property="dogAgeTF" destination="iSL-5c-vOK" id="Fcc-sG-SBm"/>
+                        <outlet property="nameLBL" destination="NHy-FJ-WnA" id="pHS-Hs-R94"/>
+                        <outlet property="phoneTF" destination="Bk4-cS-AF0" id="qoi-zm-5P5"/>
+                        <outlet property="surnameLBL" destination="icp-7S-0aE" id="SqH-7o-LnB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B22-Ed-VgD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -180,7 +198,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="goto window 4"/>
                                 <connections>
-                                    <segue destination="AUX-j5-NFm" kind="show" id="J4E-kx-lrY"/>
+                                    <action selector="nextScreen:" destination="6Tp-Q6-x4D" eventType="touchUpInside" id="X9W-3G-u6d"/>
+                                    <segue destination="AUX-j5-NFm" kind="show" identifier="segueV4" id="J4E-kx-lrY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="the age of my dog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSL-i2-flP">
@@ -195,6 +214,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="44l-pg-sKZ"/>
+                    <connections>
+                        <outlet property="addressLBL" destination="rUM-mc-cB6" id="EHR-OP-loc"/>
+                        <outlet property="cityTF" destination="cxS-mr-aqB" id="WEN-u8-Tos"/>
+                        <outlet property="dogAgeLBL" destination="hSL-i2-flP" id="eJc-Rz-Q0C"/>
+                        <outlet property="nameLBL" destination="0dL-Tj-QXJ" id="Dfj-59-naz"/>
+                        <outlet property="phoneLBL" destination="Qfk-ku-1gY" id="uih-ow-v9a"/>
+                        <outlet property="phoneTF" destination="o4d-Lv-laM" id="vsd-1g-wFV"/>
+                        <outlet property="postalCodeTF" destination="d9v-8w-aHz" id="5sF-J3-9BG"/>
+                        <outlet property="surnameLBL" destination="Gch-w8-CRv" id="HUn-hf-ysp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVi-ou-TAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
