@@ -29,6 +29,7 @@ parte 3:
 Parte 2: tipos de alertas
   - AlertsApp:
     + UI AlertController: Simple, TextField, LoginForm, Multiple Buttons
+    + SOA AlertController (TODO)
     + UI ActionSheet Standard
     + Navegación: segue, code
 
@@ -41,7 +42,7 @@ Parte 1: introducción a las tablas
   + Arquitectura de carpetas: 
   Modules [Sections[Detail, Master[Cell]]], CoreApp []
   
-  + tableView implementación Básica:
+  + tableView implementación Básica:   [SOA tableView basic]
   
       1 crear array con datos en tVC (DataSource).
       
