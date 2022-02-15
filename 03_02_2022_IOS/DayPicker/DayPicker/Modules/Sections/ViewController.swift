@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBAction func showPickerTextFieldACTION(myTextField: UITextField){
         let pickerDateView = UIDatePicker()
         pickerDateView.datePickerMode = .dateAndTime
+        pickerDateView.preferredDatePickerStyle = .wheels
         myTextField.inputView = pickerDateView
         pickerDateView.addTarget(self, action: #selector(datePickerValueChanged(_:)), for: .valueChanged)
     }
