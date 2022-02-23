@@ -15,12 +15,12 @@ final class CarsListCoordinator {
     
     static func view() -> CarsListViewController {
        let vc = CarsListViewController()
-        vc.presenter = presenter()
+        vc.presenter = presenter(vc: vc)
         return vc
     }
     
-    static func presenter() -> CarsListPresenterProtocol {
-        let presenter: CarsListPresenterProtocol = CarsListPresenter()
+    static func presenter(vc: CarsListViewController) -> CarsListPresenterProtocol {
+        let presenter = CarsListPresenter(vc: vc)
         return presenter
     }
 }

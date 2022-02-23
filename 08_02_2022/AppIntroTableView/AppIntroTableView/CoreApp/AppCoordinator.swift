@@ -17,10 +17,26 @@ final class AppCoordinator: AppCoordinatorProtocol {
     private var initialViewController = UIViewController()
     
     internal func showInitialVC(window: UIWindow) {
-        initialViewController = CarsListCoordinator.navigation()
+        self.customUI()
+        initialViewController = HomeCoordinator.view()
+
+//        initialViewController = CarsListCoordinator.navigation()
 //        initialViewController = TableMonthViewController()
 
         window.rootViewController = initialViewController
         window.makeKeyAndVisible()
+    }
+    
+    private func customUI() {
+        let navBar = UINavigationBar.appearance()
+        let tabBar = UITabBar.appearance()
+        
+        navBar.barTintColor = .purple
+        tabBar.barTintColor = .purple
+        tabBar.tintColor = .white
+        navBar.barStyle = .default
+        
+        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
     }
 }
