@@ -47,7 +47,7 @@ class ProfileTableViewCell: UITableViewCell {
 
 extension ProfileTableViewCell: ProfileTableViewCellProtocol {
     func configCell(model: ProfileModel) {
-        //
+        self.myImageViewPofile.image = model.ImageProfile
     }
     
     

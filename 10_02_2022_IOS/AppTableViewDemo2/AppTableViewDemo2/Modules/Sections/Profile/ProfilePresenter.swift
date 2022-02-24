@@ -11,6 +11,9 @@ import UIKit
 protocol ProfilePresenterProtocol {
     func viewDidLoad()
     func getDataCellForRowPost () -> Int
+    func getProfileInfoCell() -> ProfileModel?
+    func getInfoForRowCell (indexPath: Int) -> PostModel
+    
 //    func numberOfRowCell () -> Int
     //    func getInformationCellForRow(indexPath: Int) -> carModel
 }
@@ -60,6 +63,12 @@ extension ProfilePresenter: ProfilePresenterProtocol {
     
     func getDataCellForRowPost() -> Int {
         return postsArrayModel.count
+    }
+    func getProfileInfoCell() -> ProfileModel? {
+        return profileModel
+    }
+    func getInfoForRowCell (indexPath: Int) -> PostModel {
+        return postsArrayModel[indexPath]
     }
     
 }

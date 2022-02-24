@@ -61,7 +61,11 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.section {
         case 0:
             let cellProfile = myTableViewProfile.dequeueReusableCell(withIdentifier: "ProfileTableViewCell", for: indexPath) as! ProfileTableViewCell
-            cellProfile.configCell(model: ProfileModel())
+            if let modelData = self.presenter?.getProfileInfoCell(){
+                cellProfile.configCell(model: modelData)
+
+            }
+            
             return cellProfile
         default:
             return UITableViewCell()
