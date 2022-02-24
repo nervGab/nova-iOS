@@ -47,7 +47,7 @@ extension ProfilePresenter: ProfilePresenterProtocol {
     
     func getArrayData() {
         postsArrayModel.removeAll()
-        postsArrayModel = [PostModel(profile: ProfileModel(ImageProfile: UIImage(named: "ww"),
+        postsArrayModel = [PostModel(profile: ProfileModel(ImageProfile: UIImage(named: "wwoman"),
                                                            ProfileTwitter: "@twiterWonderW",
                                                            name: "wonder woman", job: "justice legue",
                                                            city: "gotham",
@@ -58,8 +58,21 @@ extension ProfilePresenter: ProfilePresenterProtocol {
                                      likesQty: 100,
                                      commentsQty: 25,
                                      postTime: Date(),
+                                     ImagePost: UIImage(named: "squirtle")),
+                           PostModel(profile: ProfileModel(ImageProfile: UIImage(named: "thor"),
+                                                           ProfileTwitter: "@twiterThunderThor",
+                                                           name: "thor odinson",
+                                                           job: "Avenger",
+                                                           city: "New York",
+                                                           followers: 3000),
+                                     postTitle: "Lorem ipsum dolor sit amet.",
+                                     postMessage: "Lorem ipsums ac nisi non, volutpat suscipit turpis. Curabitur varius tortor sit amet lorem lacinia sagittis. Integer eu lacus tristique mi cursus imperdiet. Sed congue nunc vehicula commodo tincidunt. Morbi non est lacus.",
+                                     postFont: "comic sans",
+                                     likesQty: 80,
+                                     commentsQty: 20,
+                                     postTime: Date(),
                                      ImagePost: UIImage(named: "squirtle"))]
-       
+        
     }
     
     func getDataCellForRowPost() -> Int {
