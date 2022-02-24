@@ -31,8 +31,8 @@ final class AppCoordinator: AppCoordinatorProtocol {
         let navBar = UINavigationBar.appearance()
         let tabBar = UITabBar.appearance()
         
-        navBar.barTintColor = .purple
-        tabBar.barTintColor = .purple
+        navBar.barTintColor = .systemIndigo
+        tabBar.barTintColor = .systemIndigo
         tabBar.tintColor = .white
         navBar.barStyle = .default
         

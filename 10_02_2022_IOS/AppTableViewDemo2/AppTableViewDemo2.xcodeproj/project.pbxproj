@@ -16,6 +16,9 @@
 		9503102927C6D09A0088A1A8 /* HomeCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503102827C6D09A0088A1A8 /* HomeCordinator.swift */; };
 		9503102B27C6D2E20088A1A8 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503102A27C6D2E20088A1A8 /* ProfileCoordinator.swift */; };
 		9503102D27C6D2FB0088A1A8 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503102C27C6D2FB0088A1A8 /* ProfilePresenter.swift */; };
+		9503103127C6DBD00088A1A8 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503102F27C6DBD00088A1A8 /* ProfileTableViewCell.swift */; };
+		9503103227C6DBD00088A1A8 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9503103027C6DBD00088A1A8 /* ProfileTableViewCell.xib */; };
+		9503103427C6FF210088A1A8 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503103327C6FF210088A1A8 /* ProfileModel.swift */; };
 		9582906727BAF60E009599C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9582906627BAF60E009599C9 /* AppDelegate.swift */; };
 		9582907027BAF610009599C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9582906F27BAF610009599C9 /* Assets.xcassets */; };
 		9582907327BAF610009599C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9582907127BAF610009599C9 /* LaunchScreen.storyboard */; };
@@ -37,6 +40,9 @@
 		9503102827C6D09A0088A1A8 /* HomeCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCordinator.swift; sourceTree = "<group>"; };
 		9503102A27C6D2E20088A1A8 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		9503102C27C6D2FB0088A1A8 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		9503102F27C6DBD00088A1A8 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		9503103027C6DBD00088A1A8 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		9503103327C6FF210088A1A8 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		9582906327BAF60E009599C9 /* AppTableViewDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTableViewDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9582906627BAF60E009599C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9582906F27BAF610009599C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 		9503101827C6CF740088A1A8 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				9503102E27C6DBA70088A1A8 /* Cell */,
 				9503101B27C6CFE70088A1A8 /* ProfileViewController.swift */,
 				9503101C27C6CFE70088A1A8 /* ProfileViewController.xib */,
 				9503102A27C6D2E20088A1A8 /* ProfileCoordinator.swift */,
@@ -101,6 +108,15 @@
 				9503102827C6D09A0088A1A8 /* HomeCordinator.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		9503102E27C6DBA70088A1A8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9503102F27C6DBD00088A1A8 /* ProfileTableViewCell.swift */,
+				9503103027C6DBD00088A1A8 /* ProfileTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		9582905A27BAF60E009599C9 = {
@@ -163,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				9582908827BB0F0D009599C9 /* CarModel.swift */,
+				9503103327C6FF210088A1A8 /* ProfileModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,6 +245,7 @@
 				9582907327BAF610009599C9 /* LaunchScreen.storyboard in Resources */,
 				9582908227BAFB1C009599C9 /* CarsListViewController.xib in Resources */,
 				9503101227C6BDA50088A1A8 /* CarsTableViewCell.xib in Resources */,
+				9503103227C6DBD00088A1A8 /* ProfileTableViewCell.xib in Resources */,
 				9503101E27C6CFE70088A1A8 /* ProfileViewController.xib in Resources */,
 				9582907027BAF610009599C9 /* Assets.xcassets in Resources */,
 				9503102727C6D0880088A1A8 /* HomeViewController.xib in Resources */,
@@ -242,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9503102B27C6D2E20088A1A8 /* ProfileCoordinator.swift in Sources */,
+				9503103427C6FF210088A1A8 /* ProfileModel.swift in Sources */,
 				9503101127C6BDA50088A1A8 /* CarsTableViewCell.swift in Sources */,
 				9503102D27C6D2FB0088A1A8 /* ProfilePresenter.swift in Sources */,
 				9582907C27BAF740009599C9 /* AppCoordinator.swift in Sources */,
@@ -250,6 +269,7 @@
 				9582908927BB0F0D009599C9 /* CarModel.swift in Sources */,
 				9582908127BAFB1C009599C9 /* CarsListViewController.swift in Sources */,
 				9503102627C6D0880088A1A8 /* HomeViewController.swift in Sources */,
+				9503103127C6DBD00088A1A8 /* ProfileTableViewCell.swift in Sources */,
 				9582908627BB01F7009599C9 /* CarsListPresenter.swift in Sources */,
 				9503101D27C6CFE70088A1A8 /* ProfileViewController.swift in Sources */,
 				9582906727BAF60E009599C9 /* AppDelegate.swift in Sources */,
