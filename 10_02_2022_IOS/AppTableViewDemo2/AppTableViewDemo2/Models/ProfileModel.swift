@@ -25,4 +25,5 @@ struct PostModel {
     var likesQty: Int?
     var commentsQty: Int?
     var postTime: Date?
+    var ImagePost: UIImage?
 }

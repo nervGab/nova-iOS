@@ -33,6 +33,7 @@ class ProfileViewController: UIViewController {
         self.myTableViewProfile.dataSource = self
         //registrar celda
         self.myTableViewProfile.register(UINib(nibName: "ProfileTableViewCell", bundle: nil), forCellReuseIdentifier: "ProfileTableViewCell")
+        self.myTableViewProfile.register(UINib(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
 
     }
 
@@ -63,12 +64,14 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
             let cellProfile = myTableViewProfile.dequeueReusableCell(withIdentifier: "ProfileTableViewCell", for: indexPath) as! ProfileTableViewCell
             if let modelData = self.presenter?.getProfileInfoCell(){
                 cellProfile.configCell(model: modelData)
-
             }
-            
             return cellProfile
         default:
-            return UITableViewCell()
+            let cellPost = myTableViewProfile.dequeueReusableCell(withIdentifier: "PostTableViewCell", for: indexPath) as! PostTableViewCell
+            if let modelData = self.presenter?.getInfoForRowCell(indexPath: indexPath.row){
+                cellPost.configCell(model: modelData)
+            }
+            return cellPost
         }
         
     }

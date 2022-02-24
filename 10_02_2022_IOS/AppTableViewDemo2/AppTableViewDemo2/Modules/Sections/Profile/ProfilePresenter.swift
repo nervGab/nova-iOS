@@ -57,7 +57,8 @@ extension ProfilePresenter: ProfilePresenterProtocol {
                                      postFont: "comic sans",
                                      likesQty: 100,
                                      commentsQty: 25,
-                                     postTime: Date())]
+                                     postTime: Date(),
+                                     ImagePost: UIImage(named: "squirtle"))]
        
     }
     

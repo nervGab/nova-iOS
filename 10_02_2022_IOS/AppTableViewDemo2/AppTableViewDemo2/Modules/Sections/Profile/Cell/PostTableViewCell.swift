@@ -6,9 +6,15 @@
 //
 
 import UIKit
+protocol PostTableViewCellProtocol {
+    func configCell(model: PostModel)
+}
 
 class PostTableViewCell: UITableViewCell {
-
+    //MARK: - outlets
+    @IBOutlet weak var myMessageLBL: UILabel!
+    @IBOutlet weak var myImageViewPost: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,5 +25,14 @@ class PostTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+}
+extension PostTableViewCell: PostTableViewCellProtocol {
+    func configCell(model: PostModel) {
+        self.myMessageLBL.text = model.postMessage
+        self.myImageViewPost.image = model.ImagePost
+
+    }
+    
     
 }
