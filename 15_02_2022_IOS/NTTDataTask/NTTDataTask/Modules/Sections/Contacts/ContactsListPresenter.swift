@@ -11,6 +11,7 @@ protocol ContactsListPresenterProtocol {
     func viewDidLoadInPresenter()
     func numberOfRowInSection() -> Int
     func infoCell(indexPath: Int) -> ArrayContact
+    func showContactDetail(dto: ArrayContact)
 }
 
 final class ContactsListPresenter {
@@ -18,6 +19,7 @@ final class ContactsListPresenter {
     // MARK: - Variables
     var arrayContacts: [ArrayContact] = []
     let vc: ContactsListViewController?
+    var router: ContactsListRouterProtocol?
     
     init(vc: ContactsListViewController) {
         self.vc = vc
@@ -25,6 +27,10 @@ final class ContactsListPresenter {
 }
 
 extension ContactsListPresenter: ContactsListPresenterProtocol {
+    func showContactDetail(dto: ArrayContact) {
+        self.router?.showDetail(dto: dto)
+    }
+    
     func infoCell(indexPath: Int) -> ArrayContact {
         return arrayContacts[indexPath]
     }

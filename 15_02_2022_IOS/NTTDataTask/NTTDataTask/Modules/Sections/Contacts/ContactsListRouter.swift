@@ -8,12 +8,25 @@
 import Foundation
 
 protocol ContactsListRouterProtocol {
-    
+    func showDetail(dto: ArrayContact)
 }
 final class ContactsListRouter {
+    let vc: ContactsListViewController?
     
+    init(vc: ContactsListViewController) {
+        self.vc = vc
+    }
 }
 extension ContactsListRouter: ContactsListRouterProtocol {
+    func showDetail(dto: ArrayContact) {
+        // DispatchQueue.main.async asegura que se ejecuta en el hilo principal 
+        DispatchQueue.main.async {
+            let vc = ContactDetailCoordinator.view(dto: ContactDetailCoordinatorDTO(modelData: dto))
+            self.vc?.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+
 
     
     

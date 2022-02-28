@@ -16,8 +16,20 @@ final class ContactsListCoordinator {
     }
     
     static func view() -> ContactsListViewController {
-       ContactsListViewController()
+       let vc = ContactsListViewController()
+        vc.presenter = ContactsListPresenter(vc: vc)
+        return vc
     }
     
+    static func presenter(vc: ContactsListViewController) -> ContactsListPresenterProtocol {
+        let presenter = ContactsListPresenter(vc: vc)
+        presenter.router = router(vc: vc)
+        return presenter
+    }
+    
+    static func router(vc: ContactsListViewController) -> ContactsListRouterProtocol {
+        let router = ContactsListRouter(vc: vc)
+        return router
+    }
     
 }

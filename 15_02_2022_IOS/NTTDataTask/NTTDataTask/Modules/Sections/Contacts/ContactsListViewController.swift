@@ -58,9 +58,10 @@ extension ContactsListViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let model = self.presenter.arrayContacts[indexPath.row]
-//        let vc = ContactDetailCoordinator.view(dto: ContactDetailCoordinatorDTO(modelData: model))
-//        self.navigationController?.pushViewController(vc, animated: true)
+        if let modelData = self.presenter?.infoCell(indexPath: indexPath.row){
+            self.presenter?.showContactDetail(dto: modelData)
+                    
+        }
     }
 }
 
