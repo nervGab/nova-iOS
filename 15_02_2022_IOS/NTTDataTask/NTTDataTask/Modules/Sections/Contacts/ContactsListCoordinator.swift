@@ -17,7 +17,7 @@ final class ContactsListCoordinator {
     
     static func view() -> ContactsListViewController {
        let vc = ContactsListViewController()
-        vc.presenter = ContactsListPresenter(vc: vc)
+        vc.presenter = presenter(vc: vc)
         return vc
     }
     
