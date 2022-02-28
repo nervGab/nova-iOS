@@ -6,33 +6,61 @@
 //
 
 import UIKit
-
+protocol ContactsListViewControllerProtocol {
+    func reloadDataInView()
+}
 class ContactsListViewController: UIViewController {
 
-    var arrayContacts: [ArrayContact] = []
+    var presenter: ContactsListPresenterProtocol?
+    
     @IBOutlet weak var contactsListTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.presenter?.viewDidLoadInPresenter()
         self.setupTableView()
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+    }
     private func setupTableView() {
         self.contactsListTableView.delegate = self
         self.contactsListTableView.dataSource = self
+        self.contactsListTableView.register(UINib(nibName: "ContactsTableViewCell", bundle: nil), forCellReuseIdentifier: "ContactsTableViewCell")
     }
 
 }
 
+extension ContactsListViewController: ContactsListViewControllerProtocol {
+    func reloadDataInView() {
+        self.contactsListTableView.reloadData()
+
+    }
+    
+    
+}
+
+
 extension ContactsListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayContacts.count
+        return presenter?.numberOfRowInSection() ?? 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let contactCell = self.contactsListTableView.dequeueReusableCell(withIdentifier: "ContactsTableViewCell", for: indexPath) as! ContactsTableViewCell
+        if let modelData = self.presenter?.infoCell(indexPath: indexPath.row){
+            contactCell.configCell(data: modelData)
+        }
+        return contactCell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let model = self.presenter.arrayContacts[indexPath.row]
+//        let vc = ContactDetailCoordinator.view(dto: ContactDetailCoordinatorDTO(modelData: model))
+//        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
+
