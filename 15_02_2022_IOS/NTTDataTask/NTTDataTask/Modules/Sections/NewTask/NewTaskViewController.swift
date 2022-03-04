@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NewTaskViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class NewTaskViewController: UIViewController {
 
     //MARK: - VARIABLES LOCALES GLOBALES
     var arrayPrioridad = ["ALTA", "MEDIA - ALTA", "MEDIA", "BAJA", "SIN PRIORIDAD"]
@@ -27,7 +27,25 @@ class NewTaskViewController: UIViewController, UIImagePickerControllerDelegate &
     @IBOutlet weak var descripcionTarea: UITextField!
     
     @IBAction func SaveTaskUD(_ sender: Any) {
-        
+        if !(myNuevaTareaTF.text?.isEmpty ?? false) && !(descripcionTarea.text?.isEmpty ?? false) && fotoSeleccionada  {
+            if let imageData: Data = self.myImagenNuevaTareaIV.image?.jpegData(compressionQuality: 0.5){
+                
+                SaveFavoritesPresenter.shared.addLocal(favorite: DownloadNewModel(pId: Int.random(in: 0..<999),
+                                                                                  pNewTask: self.myNuevaTareaTF.text ?? "",
+                                                                                  pPriority: self.myFechaNuevaTarea.text ?? "",
+                                                                                  pTaskDate: self.myFechaNuevaTarea.text ?? "",
+                                                                                  pTaskDescription: self.descripcionTarea.text ?? "",
+                                                                                  pTaskCategory: self.myPresentaNuevaCategoriaLBL.text ?? "",
+                                                                                  pTaskImage: imageData)){ (success) in
+                    print("...alert saving data")
+                } failure: { (error) in
+                    print("###alert error saving data")
+                }
+                                                      
+            }
+        }else {
+            print("###error juanma")
+        }
         
     }
     
@@ -50,8 +68,11 @@ class NewTaskViewController: UIViewController, UIImagePickerControllerDelegate &
         self.myImagenNuevaTareaIV.isUserInteractionEnabled = true
         let tapGR = UITapGestureRecognizer(target: self, action: #selector(showPickerImage))
         self.myImagenNuevaTareaIV.addGestureRecognizer(tapGR)
-
-
+        //3
+        let pickerView = UIPickerView()
+        pickerView.delegate = self
+        self.myPrioridadNuevaTareaTF.inputView = pickerView
+        self.myPrioridadNuevaTareaTF.text = arrayPrioridad[0]
     }
     @objc
     func showPickerImage() {
@@ -95,9 +116,49 @@ class NewTaskViewController: UIViewController, UIImagePickerControllerDelegate &
 
 }
 //MARK: - UIImagePickerControllerDelegate, UINavigationControllerDelegate
-
+extension NewTaskViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            myImagenNuevaTareaIV.contentMode = .scaleAspectFill
+            myImagenNuevaTareaIV.image = pickedImage
+            fotoSeleccionada = true
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+}
 
 //MARK: - UIPickerViewDataSource, UIPickerViewDelegate
+extension NewTaskViewController: UIPickerViewDataSource, UIPickerViewDelegate{
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return arrayPrioridad.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return arrayPrioridad[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+         myPrioridadNuevaTareaTF.text = arrayPrioridad[row]
+    }
+    
+}
 
 
-//MARK: - CategoriaViewControllerDelegate
+////MARK: - CategoriaViewControllerDelegate
+//extension NewTaskViewController: CategoriaViewControllerDelegate {
+//
+//    func nombreCategoriaSeleccionada(_ categoriaClass: CategoriaViewController, categoria row: String) {
+//        self.myPresentaNuevaCategoriaLBL.text = row
+//    }

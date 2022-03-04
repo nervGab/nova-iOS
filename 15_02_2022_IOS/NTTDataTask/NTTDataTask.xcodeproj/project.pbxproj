@@ -12,6 +12,10 @@
 		952E6CA027D29917009F8AC4 /* NewTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 952E6C9E27D29917009F8AC4 /* NewTaskViewController.xib */; };
 		952E6CA227D29960009F8AC4 /* NewTaskCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E6CA127D29960009F8AC4 /* NewTaskCoordinator.swift */; };
 		952E6CA527D2B317009F8AC4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E6CA427D2B317009F8AC4 /* Utils.swift */; };
+		952E6CA827D2BFB0009F8AC4 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E6CA627D2BFB0009F8AC4 /* TaskListViewController.swift */; };
+		952E6CA927D2BFB0009F8AC4 /* TaskListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 952E6CA727D2BFB0009F8AC4 /* TaskListViewController.xib */; };
+		952E6CAC27D2BFE3009F8AC4 /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E6CAA27D2BFE3009F8AC4 /* TaskListCell.swift */; };
+		952E6CAD27D2BFE3009F8AC4 /* TaskListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 952E6CAB27D2BFE3009F8AC4 /* TaskListCell.xib */; };
 		9570EB3B27CD0BC300C79BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9570EB3A27CD0BC300C79BC7 /* Assets.xcassets */; };
 		9570EB3E27CD0BC300C79BC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9570EB3C27CD0BC300C79BC7 /* LaunchScreen.storyboard */; };
 		9570EB4C27CD123100C79BC7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9570EB4A27CD123100C79BC7 /* AppCoordinator.swift */; };
@@ -43,6 +47,10 @@
 		952E6C9E27D29917009F8AC4 /* NewTaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTaskViewController.xib; sourceTree = "<group>"; };
 		952E6CA127D29960009F8AC4 /* NewTaskCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskCoordinator.swift; sourceTree = "<group>"; };
 		952E6CA427D2B317009F8AC4 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		952E6CA627D2BFB0009F8AC4 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		952E6CA727D2BFB0009F8AC4 /* TaskListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskListViewController.xib; sourceTree = "<group>"; };
+		952E6CAA27D2BFE3009F8AC4 /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
+		952E6CAB27D2BFE3009F8AC4 /* TaskListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskListCell.xib; sourceTree = "<group>"; };
 		9570EB2E27CD0BC000C79BC7 /* NTTDataTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTTDataTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9570EB3A27CD0BC300C79BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9570EB3D27CD0BC300C79BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -175,6 +183,10 @@
 		9570EB5227CD12D500C79BC7 /* TaskList */ = {
 			isa = PBXGroup;
 			children = (
+				952E6CA627D2BFB0009F8AC4 /* TaskListViewController.swift */,
+				952E6CA727D2BFB0009F8AC4 /* TaskListViewController.xib */,
+				952E6CAA27D2BFE3009F8AC4 /* TaskListCell.swift */,
+				952E6CAB27D2BFE3009F8AC4 /* TaskListCell.xib */,
 			);
 			path = TaskList;
 			sourceTree = "<group>";
@@ -300,11 +312,13 @@
 				95777B5B27CD6970009E76AB /* ContactDetailViewController.xib in Resources */,
 				95E4F85C27CE4863000EECE2 /* DetailProfileCell.xib in Resources */,
 				9570EB5E27CD17A900C79BC7 /* contacts.json in Resources */,
+				952E6CAD27D2BFE3009F8AC4 /* TaskListCell.xib in Resources */,
 				9570EB3E27CD0BC300C79BC7 /* LaunchScreen.storyboard in Resources */,
 				9570EB5B27CD146200C79BC7 /* TabBarHomeViewController.xib in Resources */,
 				95777B5727CD5743009E76AB /* ContactsTableViewCell.xib in Resources */,
 				9570EB3B27CD0BC300C79BC7 /* Assets.xcassets in Resources */,
 				952E6CA027D29917009F8AC4 /* NewTaskViewController.xib in Resources */,
+				952E6CA927D2BFB0009F8AC4 /* TaskListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,8 +336,10 @@
 				95E4F85B27CE4863000EECE2 /* DetailProfileCell.swift in Sources */,
 				95777B6A27CD9052009E76AB /* ContactDetailRouter.swift in Sources */,
 				9570EB6D27CD242000C79BC7 /* ContactsListCoordinator.swift in Sources */,
+				952E6CAC27D2BFE3009F8AC4 /* TaskListCell.swift in Sources */,
 				95777B5D27CD69C7009E76AB /* ContactDetailCoordinator.swift in Sources */,
 				952E6C9F27D29917009F8AC4 /* NewTaskViewController.swift in Sources */,
+				952E6CA827D2BFB0009F8AC4 /* TaskListViewController.swift in Sources */,
 				95777B5A27CD6970009E76AB /* ContactDetailViewController.swift in Sources */,
 				952E6CA227D29960009F8AC4 /* NewTaskCoordinator.swift in Sources */,
 				9570EB4D27CD123100C79BC7 /* AppDelegate.swift in Sources */,
