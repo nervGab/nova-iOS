@@ -21,8 +21,7 @@ extension ContactsListRouter: ContactsListRouterProtocol {
     func showDetail(dto: ArrayContact) {
         // DispatchQueue.main.async asegura que se ejecuta en el hilo principal 
         DispatchQueue.main.async {
-            let vc = ContactDetailCoordinator.view(dto: ContactDetailCoordinatorDTO(modelData: dto))
-            self.vc?.navigationController?.pushViewController(vc, animated: true)
+            self.vc?.navigationController?.pushViewController(ContactDetailCoordinator.view(dto: ContactDetailCoordinatorDTO(modelData: dto)), animated: true)
         }
     }
     
