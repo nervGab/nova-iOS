@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95A4FAE227D562090082F51B /* GrouponForNTTData.app in Resources */ = {isa = PBXBuildFile; fileRef = 95C7DA1C27D4C720005D2ACD /* GrouponForNTTData.app */; platformFilter = ios; };
+		95A4FAE327D5620C0082F51B /* Pods-GrouponForNTTData.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0243AB44865922D6AE060254 /* Pods-GrouponForNTTData.release.xcconfig */; };
+		95A4FAE427D5620F0082F51B /* Pods-GrouponForNTTData.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E8B0DF730E38155E8C142862 /* Pods-GrouponForNTTData.debug.xcconfig */; };
 		95C7DA2027D4C720005D2ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C7DA1F27D4C720005D2ACD /* AppDelegate.swift */; };
-		95C7DA2427D4C720005D2ACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C7DA2327D4C720005D2ACD /* ViewController.swift */; };
-		95C7DA2727D4C720005D2ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C7DA2527D4C720005D2ACD /* Main.storyboard */; };
 		95C7DA2927D4C722005D2ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C7DA2827D4C722005D2ACD /* Assets.xcassets */; };
 		95C7DA2C27D4C722005D2ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C7DA2A27D4C722005D2ACD /* LaunchScreen.storyboard */; };
 		ACEEEE576A209F901D9E031E /* Pods_GrouponForNTTData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994E6CDBEC5920932AAA3AC5 /* Pods_GrouponForNTTData.framework */; };
@@ -19,8 +20,6 @@
 		0243AB44865922D6AE060254 /* Pods-GrouponForNTTData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForNTTData.release.xcconfig"; path = "Target Support Files/Pods-GrouponForNTTData/Pods-GrouponForNTTData.release.xcconfig"; sourceTree = "<group>"; };
 		95C7DA1C27D4C720005D2ACD /* GrouponForNTTData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrouponForNTTData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C7DA1F27D4C720005D2ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		95C7DA2327D4C720005D2ACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		95C7DA2627D4C720005D2ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95C7DA2827D4C722005D2ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95C7DA2B27D4C722005D2ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95C7DA2D27D4C722005D2ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,7 +53,6 @@
 				E8B0DF730E38155E8C142862 /* Pods-GrouponForNTTData.debug.xcconfig */,
 				0243AB44865922D6AE060254 /* Pods-GrouponForNTTData.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				95C7DA1F27D4C720005D2ACD /* AppDelegate.swift */,
-				95C7DA2327D4C720005D2ACD /* ViewController.swift */,
-				95C7DA2527D4C720005D2ACD /* Main.storyboard */,
 				95C7DA2827D4C722005D2ACD /* Assets.xcassets */,
 				95C7DA2A27D4C722005D2ACD /* LaunchScreen.storyboard */,
 				95C7DA2D27D4C722005D2ACD /* Info.plist */,
@@ -149,9 +145,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A4FAE227D562090082F51B /* GrouponForNTTData.app in Resources */,
+				95A4FAE327D5620C0082F51B /* Pods-GrouponForNTTData.release.xcconfig in Resources */,
 				95C7DA2C27D4C722005D2ACD /* LaunchScreen.storyboard in Resources */,
+				95A4FAE427D5620F0082F51B /* Pods-GrouponForNTTData.debug.xcconfig in Resources */,
 				95C7DA2927D4C722005D2ACD /* Assets.xcassets in Resources */,
-				95C7DA2727D4C720005D2ACD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95C7DA2427D4C720005D2ACD /* ViewController.swift in Sources */,
 				95C7DA2027D4C720005D2ACD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,14 +209,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		95C7DA2527D4C720005D2ACD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				95C7DA2627D4C720005D2ACD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		95C7DA2A27D4C722005D2ACD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -353,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9MP26X69YN;
@@ -360,7 +350,7 @@
 				INFOPLIST_FILE = GrouponForNTTData/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -370,9 +360,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nttdata.iOS.GrouponForNTTData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -382,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9MP26X69YN;
@@ -389,7 +381,7 @@
 				INFOPLIST_FILE = GrouponForNTTData/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -399,9 +391,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nttdata.iOS.GrouponForNTTData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
