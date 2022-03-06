@@ -12,9 +12,11 @@
 		95C7DA2727D4C720005D2ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C7DA2527D4C720005D2ACD /* Main.storyboard */; };
 		95C7DA2927D4C722005D2ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C7DA2827D4C722005D2ACD /* Assets.xcassets */; };
 		95C7DA2C27D4C722005D2ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C7DA2A27D4C722005D2ACD /* LaunchScreen.storyboard */; };
+		ACEEEE576A209F901D9E031E /* Pods_GrouponForNTTData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994E6CDBEC5920932AAA3AC5 /* Pods_GrouponForNTTData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0243AB44865922D6AE060254 /* Pods-GrouponForNTTData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForNTTData.release.xcconfig"; path = "Target Support Files/Pods-GrouponForNTTData/Pods-GrouponForNTTData.release.xcconfig"; sourceTree = "<group>"; };
 		95C7DA1C27D4C720005D2ACD /* GrouponForNTTData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrouponForNTTData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C7DA1F27D4C720005D2ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95C7DA2327D4C720005D2ACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		95C7DA2827D4C722005D2ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95C7DA2B27D4C722005D2ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95C7DA2D27D4C722005D2ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		994E6CDBEC5920932AAA3AC5 /* Pods_GrouponForNTTData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrouponForNTTData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B0DF730E38155E8C142862 /* Pods-GrouponForNTTData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForNTTData.debug.xcconfig"; path = "Target Support Files/Pods-GrouponForNTTData/Pods-GrouponForNTTData.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEEEE576A209F901D9E031E /* Pods_GrouponForNTTData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38B9582E244DA5404790AE6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				994E6CDBEC5920932AAA3AC5 /* Pods_GrouponForNTTData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C609824B24D03F861ECB132 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8B0DF730E38155E8C142862 /* Pods-GrouponForNTTData.debug.xcconfig */,
+				0243AB44865922D6AE060254 /* Pods-GrouponForNTTData.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		95C7DA1327D4C720005D2ACD = {
 			isa = PBXGroup;
 			children = (
 				95C7DA1E27D4C720005D2ACD /* GrouponForNTTData */,
 				95C7DA1D27D4C720005D2ACD /* Products */,
+				6C609824B24D03F861ECB132 /* Pods */,
+				38B9582E244DA5404790AE6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95C7DA3027D4C722005D2ACD /* Build configuration list for PBXNativeTarget "GrouponForNTTData" */;
 			buildPhases = (
+				F453F33ADB9F893C65A371FF /* [CP] Check Pods Manifest.lock */,
 				95C7DA1827D4C720005D2ACD /* Sources */,
 				95C7DA1927D4C720005D2ACD /* Frameworks */,
 				95C7DA1A27D4C720005D2ACD /* Resources */,
+				877005BFA97E37C11767DE29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		877005BFA97E37C11767DE29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrouponForNTTData/Pods-GrouponForNTTData-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrouponForNTTData/Pods-GrouponForNTTData-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrouponForNTTData/Pods-GrouponForNTTData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F453F33ADB9F893C65A371FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrouponForNTTData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95C7DA1827D4C720005D2ACD /* Sources */ = {
@@ -213,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,6 +349,7 @@
 		};
 		95C7DA3127D4C722005D2ACD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B0DF730E38155E8C142862 /* Pods-GrouponForNTTData.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -308,6 +378,7 @@
 		};
 		95C7DA3227D4C722005D2ACD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0243AB44865922D6AE060254 /* Pods-GrouponForNTTData.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
