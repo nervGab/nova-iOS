@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CACE08127D0CE9D005B6479 /* GenericCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACE07F27D0CE9D005B6479 /* GenericCell.swift */; };
+		7CACE08227D0CE9D005B6479 /* GenericCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CACE08027D0CE9D005B6479 /* GenericCell.xib */; };
+		7CCDE67E27C654B3006523F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE67D27C654B3006523F6 /* AppDelegate.swift */; };
+		7CCDE68727C654B5006523F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCDE68627C654B5006523F6 /* Assets.xcassets */; };
+		7CCDE68A27C654B5006523F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCDE68827C654B5006523F6 /* LaunchScreen.storyboard */; };
+		7CCDE69327C65875006523F6 /* BaseViper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE69227C65875006523F6 /* BaseViper.swift */; };
+		7CCDE69A27C65CD2006523F6 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE69827C65CD2006523F6 /* SplashViewController.swift */; };
+		7CCDE69B27C65CD2006523F6 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CCDE69927C65CD2006523F6 /* SplashViewController.xib */; };
+		7CCDE69D27C65CE0006523F6 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE69C27C65CE0006523F6 /* SplashPresenter.swift */; };
+		7CCDE69F27C65CEB006523F6 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE69E27C65CEB006523F6 /* SplashInteractor.swift */; };
+		7CCDE6A327C65D02006523F6 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6A227C65D02006523F6 /* SplashRouter.swift */; };
+		7CCDE6A627C65D14006523F6 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6A527C65D14006523F6 /* SplashCoordinator.swift */; };
+		7CCDE6AD27C65D45006523F6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6AC27C65D45006523F6 /* ViewModel.swift */; };
+		7CCDE6B027C65DA8006523F6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6AF27C65DA8006523F6 /* Utils.swift */; };
+		7CCDE6B327C66B70006523F6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B227C66B70006523F6 /* AppCoordinator.swift */; };
+		7CCDE6B627C66E07006523F6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B527C66E07006523F6 /* NetworkService.swift */; };
+		7CCDE6B827C77213006523F6 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B727C77213006523F6 /* NetworkError.swift */; };
+		7CCDE6BA27C7E57A006523F6 /* NttDataGrouponServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B927C7E57A006523F6 /* NttDataGrouponServerModel.swift */; };
+		7CCDE6BC27C7E5DA006523F6 /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6BB27C7E5DA006523F6 /* SplashProvider.swift */; };
+		7CCDE6BE27C7E710006523F6 /* NttDataGrouponBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6BD27C7E710006523F6 /* NttDataGrouponBusinessModel.swift */; };
+		A73A3315FFE2ED0FE62DAA5C /* Pods_GrouponForNttdata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C29626ED98E635E3090774 /* Pods_GrouponForNttdata.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		51C29626ED98E635E3090774 /* Pods_GrouponForNttdata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrouponForNttdata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CACE07F27D0CE9D005B6479 /* GenericCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCell.swift; sourceTree = "<group>"; };
+		7CACE08027D0CE9D005B6479 /* GenericCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericCell.xib; sourceTree = "<group>"; };
+		7CCDE67A27C654B3006523F6 /* GrouponForNttdata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrouponForNttdata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CCDE67D27C654B3006523F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CCDE68627C654B5006523F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CCDE68927C654B5006523F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CCDE68B27C654B5006523F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CCDE69227C65875006523F6 /* BaseViper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViper.swift; sourceTree = "<group>"; };
+		7CCDE69827C65CD2006523F6 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		7CCDE69927C65CD2006523F6 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		7CCDE69C27C65CE0006523F6 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		7CCDE69E27C65CEB006523F6 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		7CCDE6A227C65D02006523F6 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		7CCDE6A527C65D14006523F6 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		7CCDE6AC27C65D45006523F6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7CCDE6AF27C65DA8006523F6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7CCDE6B227C66B70006523F6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7CCDE6B527C66E07006523F6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		7CCDE6B727C77213006523F6 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		7CCDE6B927C7E57A006523F6 /* NttDataGrouponServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NttDataGrouponServerModel.swift; sourceTree = "<group>"; };
+		7CCDE6BB27C7E5DA006523F6 /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
+		7CCDE6BD27C7E710006523F6 /* NttDataGrouponBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NttDataGrouponBusinessModel.swift; sourceTree = "<group>"; };
+		8EDAFA30CB9B31E0E0B73CD0 /* Pods-GrouponForNttdata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForNttdata.release.xcconfig"; path = "Target Support Files/Pods-GrouponForNttdata/Pods-GrouponForNttdata.release.xcconfig"; sourceTree = "<group>"; };
+		931317391E311E848C4C5FF5 /* Pods-GrouponForNttdata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForNttdata.debug.xcconfig"; path = "Target Support Files/Pods-GrouponForNttdata/Pods-GrouponForNttdata.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CCDE67727C654B3006523F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73A3315FFE2ED0FE62DAA5C /* Pods_GrouponForNttdata.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CACE07E27D0CE78005B6479 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7CACE07F27D0CE9D005B6479 /* GenericCell.swift */,
+				7CACE08027D0CE9D005B6479 /* GenericCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7CCDE67127C654B2006523F6 = {
+			isa = PBXGroup;
+			children = (
+				7CCDE67C27C654B3006523F6 /* GrouponForNttdata */,
+				7CCDE67B27C654B3006523F6 /* Products */,
+				B31EEA1B0DEB615858330E3E /* Pods */,
+				A881EC1B15EFC8CD70BBE796 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7CCDE67B27C654B3006523F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE67A27C654B3006523F6 /* GrouponForNttdata.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CCDE67C27C654B3006523F6 /* GrouponForNttdata */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE6B427C66DF4006523F6 /* NetworkService */,
+				7CCDE6B127C66B4E006523F6 /* CoreApp */,
+				7CCDE6AE27C65D97006523F6 /* Utils+Helpers */,
+				7CCDE69427C65CAA006523F6 /* Modules */,
+				7CCDE69127C6584A006523F6 /* BaseViper */,
+				7CCDE68627C654B5006523F6 /* Assets.xcassets */,
+				7CCDE68827C654B5006523F6 /* LaunchScreen.storyboard */,
+				7CCDE68B27C654B5006523F6 /* Info.plist */,
+			);
+			path = GrouponForNttdata;
+			sourceTree = "<group>";
+		};
+		7CCDE69127C6584A006523F6 /* BaseViper */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE69227C65875006523F6 /* BaseViper.swift */,
+			);
+			path = BaseViper;
+			sourceTree = "<group>";
+		};
+		7CCDE69427C65CAA006523F6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE69527C65CB1006523F6 /* Sections */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7CCDE69527C65CB1006523F6 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE69627C65CB7006523F6 /* Splash */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		7CCDE69627C65CB7006523F6 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				7CACE07E27D0CE78005B6479 /* Cell */,
+				7CCDE6A727C65D1A006523F6 /* Models */,
+				7CCDE6A427C65D05006523F6 /* Coordinator */,
+				7CCDE69827C65CD2006523F6 /* SplashViewController.swift */,
+				7CCDE69927C65CD2006523F6 /* SplashViewController.xib */,
+				7CCDE69C27C65CE0006523F6 /* SplashPresenter.swift */,
+				7CCDE69E27C65CEB006523F6 /* SplashInteractor.swift */,
+				7CCDE6A227C65D02006523F6 /* SplashRouter.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		7CCDE6A427C65D05006523F6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE6A527C65D14006523F6 /* SplashCoordinator.swift */,
+				7CCDE6BB27C7E5DA006523F6 /* SplashProvider.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7CCDE6A727C65D1A006523F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE6B927C7E57A006523F6 /* NttDataGrouponServerModel.swift */,
+				7CCDE6BD27C7E710006523F6 /* NttDataGrouponBusinessModel.swift */,
+				7CCDE6AC27C65D45006523F6 /* ViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CCDE6AE27C65D97006523F6 /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE6AF27C65DA8006523F6 /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		7CCDE6B127C66B4E006523F6 /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE67D27C654B3006523F6 /* AppDelegate.swift */,
+				7CCDE6B227C66B70006523F6 /* AppCoordinator.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		7CCDE6B427C66DF4006523F6 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE6B527C66E07006523F6 /* NetworkService.swift */,
+				7CCDE6B727C77213006523F6 /* NetworkError.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		A881EC1B15EFC8CD70BBE796 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51C29626ED98E635E3090774 /* Pods_GrouponForNttdata.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B31EEA1B0DEB615858330E3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				931317391E311E848C4C5FF5 /* Pods-GrouponForNttdata.debug.xcconfig */,
+				8EDAFA30CB9B31E0E0B73CD0 /* Pods-GrouponForNttdata.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CCDE67927C654B3006523F6 /* GrouponForNttdata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CCDE68E27C654B6006523F6 /* Build configuration list for PBXNativeTarget "GrouponForNttdata" */;
+			buildPhases = (
+				4ED8B4709E1B04AA6572F2AC /* [CP] Check Pods Manifest.lock */,
+				7CCDE67627C654B3006523F6 /* Sources */,
+				7CCDE67727C654B3006523F6 /* Frameworks */,
+				7CCDE67827C654B3006523F6 /* Resources */,
+				618D06FBA2DA60921378E54D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrouponForNttdata;
+			productName = GrouponForNttdata;
+			productReference = 7CCDE67A27C654B3006523F6 /* GrouponForNttdata.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CCDE67227C654B2006523F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					7CCDE67927C654B3006523F6 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 7CCDE67527C654B2006523F6 /* Build configuration list for PBXProject "GrouponForNttdata" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CCDE67127C654B2006523F6;
+			productRefGroup = 7CCDE67B27C654B3006523F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CCDE67927C654B3006523F6 /* GrouponForNttdata */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CCDE67827C654B3006523F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CCDE68A27C654B5006523F6 /* LaunchScreen.storyboard in Resources */,
+				7CACE08227D0CE9D005B6479 /* GenericCell.xib in Resources */,
+				7CCDE69B27C65CD2006523F6 /* SplashViewController.xib in Resources */,
+				7CCDE68727C654B5006523F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4ED8B4709E1B04AA6572F2AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrouponForNttdata-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		618D06FBA2DA60921378E54D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrouponForNttdata/Pods-GrouponForNttdata-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrouponForNttdata/Pods-GrouponForNttdata-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrouponForNttdata/Pods-GrouponForNttdata-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CCDE67627C654B3006523F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CCDE6B327C66B70006523F6 /* AppCoordinator.swift in Sources */,
+				7CCDE6B827C77213006523F6 /* NetworkError.swift in Sources */,
+				7CCDE6BE27C7E710006523F6 /* NttDataGrouponBusinessModel.swift in Sources */,
+				7CCDE6AD27C65D45006523F6 /* ViewModel.swift in Sources */,
+				7CCDE69A27C65CD2006523F6 /* SplashViewController.swift in Sources */,
+				7CCDE6A327C65D02006523F6 /* SplashRouter.swift in Sources */,
+				7CCDE67E27C654B3006523F6 /* AppDelegate.swift in Sources */,
+				7CCDE6BA27C7E57A006523F6 /* NttDataGrouponServerModel.swift in Sources */,
+				7CCDE69F27C65CEB006523F6 /* SplashInteractor.swift in Sources */,
+				7CACE08127D0CE9D005B6479 /* GenericCell.swift in Sources */,
+				7CCDE6B027C65DA8006523F6 /* Utils.swift in Sources */,
+				7CCDE6A627C65D14006523F6 /* SplashCoordinator.swift in Sources */,
+				7CCDE69327C65875006523F6 /* BaseViper.swift in Sources */,
+				7CCDE6B627C66E07006523F6 /* NetworkService.swift in Sources */,
+				7CCDE6BC27C7E5DA006523F6 /* SplashProvider.swift in Sources */,
+				7CCDE69D27C65CE0006523F6 /* SplashPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7CCDE68827C654B5006523F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CCDE68927C654B5006523F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CCDE68C27C654B5006523F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CCDE68D27C654B5006523F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CCDE68F27C654B6006523F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 931317391E311E848C4C5FF5 /* Pods-GrouponForNttdata.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6M3JH3KTX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GrouponForNttdata/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drodcasi.iOS.GrouponForNttdata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7CCDE69027C654B6006523F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EDAFA30CB9B31E0E0B73CD0 /* Pods-GrouponForNttdata.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6M3JH3KTX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GrouponForNttdata/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drodcasi.iOS.GrouponForNttdata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CCDE67527C654B2006523F6 /* Build configuration list for PBXProject "GrouponForNttdata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CCDE68C27C654B5006523F6 /* Debug */,
+				7CCDE68D27C654B5006523F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CCDE68E27C654B6006523F6 /* Build configuration list for PBXNativeTarget "GrouponForNttdata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CCDE68F27C654B6006523F6 /* Debug */,
+				7CCDE69027C654B6006523F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CCDE67227C654B2006523F6 /* Project object */;
+}
