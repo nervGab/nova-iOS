@@ -1,21 +1,22 @@
 //
-//  SplashInteractor.swift
-//  GrouponForNttdata
+//  SplashDosInteractor.swift
+//  GrouponForEveris
 //
-//  Created by Juan Manuel Pereira Sanchez on 23/2/22.
+//  Created by Andres Felipe Ocampo Eljaiek on 6/8/21.
 //
 
 import Foundation
 
-protocol SplashInteractorProtocol {
-	func fetchData()
+protocol SplashDosInteractorPresenterInterface: InteractorPresenterInterface {
+    func fetchDataFromInteractor()
 }
 
-class SplashInteractor: BaseInteractor<SplashInteractorOutputProtocol> {
-	
-	let provider: SplashProviderProtocol = SplashProvider()
-	
-	private func transformaDataViewModel(data: [Card], completion: @escaping ([DataViewModel]) -> ()) {
+final class SplashDosInteractor: InteractorInterface {
+    
+    weak var presenter: SplashDosPresenterInteractorInterface!
+    let provider: SplashProviderProtocol = SplashProvider()
+    
+	private func transformaDataViewModel(data: [Card]) -> [DataViewModel] {
 		var arrayData: [DataViewModel] = []
 		for index in 0..<data.count {
 			if let modelData = data[index].data {
@@ -23,7 +24,7 @@ class SplashInteractor: BaseInteractor<SplashInteractorOutputProtocol> {
 				arrayData.append(obj)
 			}
 		}
-		completion(arrayData)
+		return arrayData
 	}
 	
 	private func transformDataToCardViewModel(data: CardData) -> CardViewModel {
@@ -85,20 +86,25 @@ class SplashInteractor: BaseInteractor<SplashInteractorOutputProtocol> {
 	private func transformeDataToDivisionViewModel(data: Division?) -> DivisionViewModel {
 		DivisionViewModel(pLng: data?.lng ?? 0.0, pName: data?.name ?? "", pLat: data?.lat ?? 0.0)
 	}
-	
+    
 }
 
-extension SplashInteractor: SplashInteractorProtocol {
-	
-	func fetchData() {
-		provider.fetchData { [weak self] (result) in
-			guard self != nil else { return }
-//			self?.presenter?.getDataFromBusiness(data: self?.transformaDataViewModel(data: result.cards, completion: { (resultDataViewModel) in
-//
-//			}))
-		} failure: { (error) in
-			//
+extension SplashDosInteractor: SplashDosInteractorPresenterInterface {
+    
+	func fetchDataFromInteractor() {
+		
+		DDBBCoreStack.shared.loadDataIfNeeded { (isRefreshingRequiered) in
+			if isRefreshingRequiered {
+				self.provider.fetchData { [weak self] (result) in
+					guard self != nil else { return }
+					DDBBCoreStack.shared.setCuponList(data: self?.transformaDataViewModel(data: result.cards ?? []) ?? [])
+					self?.presenter?.getDataFromInteractor(data: self?.transformaDataViewModel(data: result.cards ?? []))
+				} failure: { (error) in
+					print(error.localizedDescription)
+				}
+			} else {
+				self.presenter?.getDataFromInteractor(data: DDBBCoreStack.shared.getCuponList())
+			}
 		}
-
 	}
 }

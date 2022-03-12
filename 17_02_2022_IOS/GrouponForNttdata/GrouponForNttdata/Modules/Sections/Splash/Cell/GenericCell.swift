@@ -8,7 +8,7 @@
 import UIKit
 
 protocol GenericCellPRotocol {
-	func configCell(data: CardDataViewModel)
+	func configCell(data: DataViewModel)
 }
 
 class GenericCell: UITableViewCell, ReuseIdentifierView {
@@ -26,7 +26,7 @@ class GenericCell: UITableViewCell, ReuseIdentifierView {
 
 extension GenericCell: GenericCellPRotocol {
 	
-	func configCell(data: CardDataViewModel) {
+	func configCell(data: DataViewModel) {
 		
 	}
 	
