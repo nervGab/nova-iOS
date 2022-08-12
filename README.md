@@ -66,4 +66,4 @@ Parte 3: App de navegación
   + clase Helpers+Utils para metodos reutilizables 
 
 
-tracking sheet (Ask for access): https://docs.google.com/spreadsheets/d/1eUYuaQPKfVGLa_pjcSa-LEiiuAXbY2ALMMXQ9dOrotU/edit?usp=sharing
+
